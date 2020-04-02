@@ -1,0 +1,34 @@
+:root {
+  --white: #ffffff;
+  --light-gray: #f3f3f3;
+  --mid-gray: #e8e8e8;
+  --dark-gray: #717171;
+  --black: #1e1e1e;
+  --red: #9e1b32;
+
+  --container-outer-width: 120rem; /* 1920px */
+  --container-inner-width: 78.75rem; /* 1260px */
+
+  --spacing-xs: 0.625rem; /* 10px */
+  --spacing-sm: 1.25rem; /* 20px */
+  --spacing-md: 3.125rem; /* 50px */
+  --spacing-lg: 7.5rem; /* 120px */
+  --spacing-xl: 11.25rem; /* 180px */
+
+  --headline-font-family: 'JLR Emeric';
+  --headline-font-size: 2.75rem; /* 44px */
+  --copy-font-size: 1.125rem; /* 18px */
+  --copy-large-font-size: 1.375rem; /* 22px */
+  --copy-small-font-size: 0.75rem; /* 12px */
+
+  --button-font-size: 1.5rem; /* 24px */
+  --button-color: var(--white);
+  --button-background: var(--red);
+  --button-font-family: 'JLR Emeric';
+  --button-font-weight: 600;
+
+  --swiper-theme-color: var(--white);
+  --swiper-navigation-size: var(--copy-font-size);
+}
+
+$breakpoint-md: 900px;

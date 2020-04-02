@@ -1,0 +1,26 @@
+.highlights {
+  padding: var(--spacing-lg) 0;
+
+  .select-wrapper {
+    margin-top: var(--spacing-sm);
+    flex-basis: 100%;
+  }
+
+  .select {
+    background-color: var(--mid-gray);
+  }
+}
+
+.highlights__content {
+  display: none;
+}
+
+.highlights__content .active {
+  display: block;
+}
+
+@media (min-width: $breakpoint-md) {
+  .highlights {
+    padding: calc(var(--spacing-lg) * 2) 0 var(--spacing-lg);
+  }
+}

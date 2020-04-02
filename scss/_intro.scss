@@ -1,0 +1,38 @@
+.intro {
+  padding: var(--spacing-lg) 0 0;
+  background-color: var(--mid-gray);
+
+  .container {
+    align-items: flex-start;
+  }
+
+  .copy {
+    margin-top: var(--spacing-sm);
+  }
+
+  .image {
+    max-width: calc(100% + var(--spacing-md) * 2);
+    margin: var(--spacing-md) calc(var(--spacing-md) * -1) 0;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+  .intro {
+    padding: var(--spacing-lg) 0;
+
+    .container {
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .column {
+        flex-basis: 50%;
+        flex-grow: 0;
+      }
+    }
+
+    .image {
+      padding-left: var(--spacing-md);
+      margin-bottom: calc(var(--spacing-xl) * 3 / -2);
+    }
+  }
+}

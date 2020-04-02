@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx @11ty/eleventy --serve",
+    "dev": "gulp watch & eleventy --serve",
     "build": "eleventy"
   },
   "repository": {
@@ -16,6 +16,11 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "html-minifier": "^4.0.0",
     "prettier": "2.0.2",
     "stylelint": "^13.2.1",
     "stylelint-config-standard": "^20.0.0"
