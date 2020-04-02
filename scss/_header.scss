@@ -1,6 +1,6 @@
 .header {
   padding: var(--spacing-lg) 0;
-  background-image: url(/images/header.jpg);
+  background-image: url(/images/header-mobil.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -26,6 +26,7 @@
 @media (min-width: $breakpoint-md) {
   .header {
     padding: var(--spacing-xl) 0;
+    background-image: url(/images/header.jpg);
 
     .container {
       .column {

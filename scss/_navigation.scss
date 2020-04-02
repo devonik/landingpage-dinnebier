@@ -39,6 +39,25 @@
         opacity: 1;
       }
     }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      height: 100%;
+      top: 0;
+      width: 50px;
+      margin: 0;
+    }
+
+    .swiper-button-prev {
+      left: 0;
+      background: linear-gradient(to right, var(--black), transparent);
+
+    }
+
+    .swiper-button-next {
+      right: 0;
+      background: linear-gradient(to left, var(--black), transparent);
+    }
   }
 }
 

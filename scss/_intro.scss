@@ -32,7 +32,7 @@
 
     .image {
       padding-left: var(--spacing-md);
-      margin-bottom: calc(var(--spacing-xl) * 3 / -2);
+      margin: 0 0 calc(var(--spacing-xl) * 3 / -2);
     }
   }
 }

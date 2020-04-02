@@ -27,7 +27,7 @@ gulp.task('js', function() {
 });
 
 /*
-  Watch folders for changess
+  Watch folders for changes
 */
 gulp.task("watch", function() {
   gulp.watch('./scss/**/*.scss', gulp.parallel('css'));

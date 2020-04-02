@@ -7,7 +7,6 @@ module.exports = function(eleventyConfig) {
   // pass through static files
   eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("fonts");
-  eleventyConfig.addPassthroughCopy("js"); // to be removed when gulp concat js works
 
   // minify the html output
   const htmlmin = require("html-minifier");
