@@ -5,6 +5,8 @@
 
   .select-wrapper {
     flex-basis: 100%;
+    border-bottom: 1px solid var(--dark-gray);
+    margin-bottom: var(--spacing-xs);
   }
 
   .select-wrapper:before {
@@ -46,6 +48,7 @@
       top: 0;
       width: 50px;
       margin: 0;
+      outline: none;
     }
 
     .swiper-button-prev {
@@ -73,6 +76,12 @@
       .select-wrapper {
         flex-basis: 20%;
         flex-grow: 0;
+        border: none;
+        margin: 0;
+      }
+
+      .select {
+        padding-left: 0;
       }
 
       .swiper-container {
@@ -85,5 +94,6 @@
   .navigation__spacer {
     display: block;
     margin: 0 var(--spacing-md);
+    border-right: 1px solid var(--dark-gray);
   }
 }

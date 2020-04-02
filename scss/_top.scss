@@ -17,3 +17,17 @@
   color: var(--dark-gray);
   margin-right: var(--spacing-sm);
 }
+
+.top__logo--desktop {
+  display: none;
+}
+
+@media (min-width: $breakpoint-md) {
+  .top__logo--mobile {
+    display: none;
+  }
+
+  .top__logo--desktop {
+    display: block;
+  }
+}

@@ -7,11 +7,12 @@
 
   .container {
     justify-content: flex-end;
+  }
 
-    .column {
-      color: var(--white);
-      text-shadow: 0 1px 5px var(--dark-gray);
-    }
+  .headline,
+  .copy {
+    color: var(--white);
+    text-shadow: 0 1px 4px var(--dark-gray);
   }
 
   .copy {
@@ -19,7 +20,13 @@
   }
 
   .button {
-    margin-top: var(--spacing-md);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 9;
+    box-sizing: border-box;
   }
 }
 
@@ -33,6 +40,12 @@
         flex-basis: 40%;
         flex-grow: 0;
       }
+    }
+
+
+    .button {
+      margin-top: var(--spacing-md);
+      position: static;
     }
   }
 }
