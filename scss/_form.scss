@@ -1,0 +1,83 @@
+.form {
+  background-color: var(--mid-gray);
+  width: 100%;
+  padding: calc(var(--spacing-sm) * 1.75) calc(var(--spacing-sm) * 1.5);
+  display: flex;
+  flex-wrap: wrap;
+
+  * {
+    font-size: var(--copy-font-size);
+  }
+
+  label {
+    letter-spacing: .02rem;
+    display: block;
+    padding-bottom: var(--spacing-xs);
+  }
+
+  input,
+  textarea {
+    border: none;
+    padding: var(--spacing-xs);
+    width: 100%;
+  }
+
+  .select-wrapper,
+  input,
+  textarea {
+    margin-bottom: var(--spacing-sm);
+  }
+
+  input[type="submit"] {
+    margin: var(--spacing-sm) 0 0;
+  }
+
+  input[type="checkbox"] {
+    width: auto;
+
+    & + label {
+      display: inline-block;
+    }
+  }
+
+  .select {
+    font-family: var(--copy-font-family);
+    text-transform: capitalize;
+  }
+}
+
+.form__column--top {
+  // background-color: orangered;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__column--left {
+  // background-color: powderblue;
+  width: 49%;
+}
+
+.form__column--right {
+  // background-color: seagreen;
+  width: 49%;
+}
+
+.form__column--bottom {
+  // background-color: hotpink;
+  width: 100%;
+}
+
+.form__group {
+  width: 100%;
+  display: inline-block;
+
+  &--25 {
+    width: 25%;
+  }
+
+  &--75 {
+    width: 75%;
+    padding-left: var(--spacing-xs);
+  }
+}
