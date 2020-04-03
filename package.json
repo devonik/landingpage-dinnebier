@@ -25,5 +25,9 @@
     "stylelint": "^13.2.1",
     "stylelint-config-standard": "^20.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "aws-sdk": "^2.652.0",
+    "axios": "^0.19.2",
+    "querystring": "^0.2.0"
+  }
 }

@@ -1,5 +1,11 @@
 <section class="contact">
   <div class="container">
     <h2 class="headline headline--large">Haben wir Ihr Interesse geweckt?</h2>
+    <form id="form" action="/.netlify/functions/ses-send-email"  method="POST" enctype='application/json'>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="message" />
+      <button type="submit">Absenden</button>
+    </form>
   </div>
 </section>
