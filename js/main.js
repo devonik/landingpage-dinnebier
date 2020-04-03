@@ -10,19 +10,16 @@ var selectLeasing = document.querySelector('.select__option--leasing');
 var contentLeasing = document.querySelector('.highlights__content--leasing');
 
 selectHighlights.onclick = function() {
-  console.log('click' + selectHighlights);
   content.classList.remove('active')
   contentHighlights.classList.toggle('active');
 }
 
 selectEmission.onclick = function() {
-  console.log('click' + selectEmission);
   content.classList.remove('active')
   contentEmission.classList.toggle('active');
 }
 
 selectLeasing.onclick = function() {
-  console.log('click' + selectLeasing);
   content.classList.remove('active')
   contentLeasing.classList.toggle('active');
 }

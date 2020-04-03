@@ -1,0 +1,39 @@
+.list {
+  width: 100%;
+}
+
+.list__element {
+  background-color: var(--light-gray);
+  list-style-type: disc;
+  list-style-position: inside;
+  padding: var(--spacing-xs) var(--spacing-sm);
+
+  &:nth-child(odd) {
+    background-color: var(--mid-gray);
+  }
+}
+
+.definition-list {
+  width: 100%;
+}
+
+.definition-list__spacer {
+  border-bottom: 1px solid var(--mid-gray);
+  width: 100%;
+  display: flex;
+}
+
+.definition-list__term,
+.definition-list__description {
+  padding: var(--spacing-xs) var(--spacing-sm);
+}
+
+.definition-list__term {
+  font-weight: 600;
+  float: left;
+  clear: both;
+}
+
+.definition-list__description {
+  float: right;
+}

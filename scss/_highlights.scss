@@ -19,8 +19,17 @@
   display: block;
 }
 
+.highlights__swiper {
+  margin: var(--spacing-sm) 0;
+}
+
 @media (min-width: $breakpoint-md) {
   .highlights {
     padding: calc(var(--spacing-lg) * 2) 0 var(--spacing-lg);
+
+    .list {
+      columns: 2;
+      column-gap: 0;
+    }
   }
 }
