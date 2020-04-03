@@ -7,8 +7,8 @@ exports.handler = async event => {
 
     console.log("parsedData", parsedData);
       AWS.config.update({
-          accessKeyId: 'AKIASN2HCJIJ6UITVZZK',//process.env.AWS_ACCESS_KEY,
-          secretAccessKey: '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',//process.env.AWS_SECRET_ACCESS_KEY,
+          accessKeyId: 'AKIASN2HCJIJSVWR6Z54',//process.env.AWS_ACCESS_KEY,
+          secretAccessKey: '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',//process.env.AWS_SECRET_ACCESS_KEY,
           //eu-central-1 = Frankfurt
           region: 'eu-central-1'
       })
@@ -27,9 +27,13 @@ exports.handler = async event => {
               Data:
                 `<html>
                     <body>
-                      From: ${parsedData.name}
+                      From: ${parsedData.firstName} ${parsedData.lastName}
                       <br />
-                      Message: ${parsedData.message}
+                      Tel: ${parsedData.tel}
+                      <br />
+                      plz: ${parsedData.plz}
+                      <br />
+                      place: ${parsedData.place}
                     </body>
                 </html>`
             },
@@ -43,7 +47,7 @@ exports.handler = async event => {
             Data: "From Contact Form"
           }
         },
-        Source: parsedData.email
+        Source: 'developer@upljft.com'
       }
   
       return ses.sendEmail(params).promise().then(data => {
