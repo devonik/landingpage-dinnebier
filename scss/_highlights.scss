@@ -1,5 +1,15 @@
 .highlights {
-  padding: var(--spacing-lg) 0;
+  padding: var(--spacing-md) 0;
+
+  .container {
+    .column--right {
+      display: none;
+    }
+  }
+
+  .headline {
+    margin-bottom: var(--spacing-sm);
+  }
 
   .select-wrapper {
     margin-top: var(--spacing-sm);
@@ -11,21 +21,69 @@
   }
 }
 
+// General Tab Container Styles
 .highlights__content {
-  display: none;
 }
 
+// Active class to show content
 .highlights__content.active {
-  display: block;
 }
 
-.highlights__swiper {
-  margin: var(--spacing-sm) 0;
+// Specific Styles for each Tab Container
+.highlights__content--details {
+  .highlights__swiper {
+    margin: var(--spacing-sm) 0;
+  }
+}
+
+.highlights__content--emission {
+  .column--left {
+    .image {
+      margin-top: var(--spacing-sm);
+    }
+  }
+}
+
+.highlights__content--leasing {
+  .headline {
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .copy {
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .definition-list {
+    margin-bottom: var(--spacing-md);
+  }
+
+  .button {
+
+    & + .button {
+      margin-top: var(--spacing-sm);
+    }
+  }
 }
 
 @media (min-width: $breakpoint-md) {
   .highlights {
     padding: calc(var(--spacing-lg) * 2) 0 var(--spacing-lg);
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+
+      .column--left {
+        flex-basis: 60%;
+        flex-grow: 0;
+      }
+
+      .column--right {
+        display: block;
+        flex-basis: 40%;
+        flex-grow: 0;
+      }
+    }
 
     .list {
       columns: 2;

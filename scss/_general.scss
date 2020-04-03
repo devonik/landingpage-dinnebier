@@ -27,18 +27,44 @@ body {
   padding: 0 var(--spacing-sm);
   display: flex;
   flex-wrap: wrap;
+
+  & > .container {
+    padding: 0;
+  }
+
+  .column {
+    & + .column {
+      padding: var(--spacing-md) 0 0;
+    }
+  }
 }
 
 .headline {
   font-family: 'JLR Emeric';
-  font-size: var(--headline-font-size);
   font-weight: 200;
   text-transform: uppercase;
   line-height: 1.2;
+  width: 100%;
+
+  &--large {
+    font-size: var(--headline-large-font-size);
+  }
+
+  &--medium {
+    font-size: var(--headline-medium-font-size);
+  }
 }
 
 .copy {
   font-size: var(--copy-font-size);
+
+  &--small {
+    font-size: var(--copy-small-font-size);
+  }
+
+  &--bold {
+    font-weight: 600;
+  }
 }
 
 .link {
@@ -47,4 +73,12 @@ body {
 
 .image {
   max-width: 100%;
+}
+
+@media (min-width: $breakpoint-md) {
+  .column {
+    & + .column {
+      padding: 0 0 0 var(--spacing-md);
+    }
+  }
 }

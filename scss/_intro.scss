@@ -1,5 +1,5 @@
 .intro {
-  padding: var(--spacing-lg) 0 0;
+  padding: var(--spacing-md) 0 0;
   background-color: var(--mid-gray);
 
   .container {
@@ -11,8 +11,10 @@
   }
 
   .image {
-    max-width: calc(100% + var(--spacing-md) * 2);
-    margin: var(--spacing-md) calc(var(--spacing-md) * -1) 0;
+    // max-width: calc(100% + var(--spacing-md) * 2);
+    // margin: var(--spacing-md) calc(var(--spacing-md) * -1) 0;
+
+    // Achieve full bleed layout
   }
 }
 

@@ -15,6 +15,7 @@
 
 .definition-list {
   width: 100%;
+  overflow: hidden;
 }
 
 .definition-list__spacer {
@@ -25,7 +26,7 @@
 
 .definition-list__term,
 .definition-list__description {
-  padding: var(--spacing-xs) var(--spacing-sm);
+  padding: var(--spacing-xs) 0;
 }
 
 .definition-list__term {
