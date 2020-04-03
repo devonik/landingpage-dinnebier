@@ -8,14 +8,7 @@
 }
 
 .top__partner {
-  display: flex;
-  align-items: center;
-}
-
-.top__partner span {
-  font-size: var(--copy-small-font-size);
-  color: var(--dark-gray);
-  margin-right: var(--spacing-sm);
+  display: none;
 }
 
 .top__logo--desktop {
@@ -29,5 +22,16 @@
 
   .top__logo--desktop {
     display: block;
+  }
+
+  .top__partner {
+    display: flex;
+    align-items: center;
+  }
+
+  .top__partner span {
+    font-size: var(--copy-small-font-size);
+    color: var(--dark-gray);
+    margin-right: var(--spacing-sm);
   }
 }
