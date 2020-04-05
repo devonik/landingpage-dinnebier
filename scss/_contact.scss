@@ -1,15 +1,12 @@
 .contact {
   padding: var(--spacing-md) 0;
-}
 
-.form {
-  .form__column--right {
-    input[type="checkbox"] {
+  .form {
+    margin-top: var(--spacing-md);
+  }
 
-      & + label {
-        padding: 42px 0 29px;
-      }
-    }
+  .select {
+    background: var(--white);
   }
 }
 

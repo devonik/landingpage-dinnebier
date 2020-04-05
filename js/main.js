@@ -16,7 +16,7 @@ document.addEventListener('click', function(event) {
   if (!event.target.classList.contains('toggle')) return;
 
   // Get the content
-  var content = document.querySelector(event.dataset.option);
+  var content = document.querySelector(event.target.getAttribute('data-option'));
   if (!content) return;
 
   // Toggle the content
