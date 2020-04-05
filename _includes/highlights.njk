@@ -5,14 +5,14 @@
 
     <div class="select-wrapper">
       <select class="select">
-        <option value="highlights" class="select__option select__option--details">Ausstattungshighlights</option>
-        <option value="emission" class="select__option select__option--emission">Verbrauchsangaben</option>
-        <option value="leasing" class="select__option select__option--leasing">Unser Leasingangebot</option>
+        <option value="highlights" class="select__option" data-option="highlights-select-details">Ausstattungshighlights</option>
+        <option value="emission" class="select__option" data-option="highlights-select-emission">Verbrauchsangaben</option>
+        <option value="leasing" class="select__option" data-option="highlights-select-leasing">Unser Leasingangebot</option>
       </select>
     </div>
 
 
-    <div class="container highlights__content highlights__content--details">
+    <div id="highlights-select-details" class="container highlights__content highlights__content--details">
       <div class="swiper-container highlights__swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -45,7 +45,7 @@
     </div>
 
 
-    <div class="container highlights__content highlights__content--emission">
+    <div id="highlights-select-emission" class="container highlights__content highlights__content--emission">
       <h3 class="headline headline--medium">Verbrauchs&shy;angaben und CO<sup>2</sup>-Emissionen</h3>
       <div class="column column--left">
         <dl class="definition-list">
@@ -78,7 +78,7 @@
     </div>
 
 
-    <div class="container highlights__content highlights__content--leasing">
+    <div id="highlights-select-leasing" class="container highlights__content highlights__content--leasing">
       <h3 class="headline headline--medium">Unser Leasingangebot</h3>
       <div class="column column--left">
         <p class="copy copy--bold">für Jaguar E-PACE D180 AWD aut. Chequered Flag Vertragsart: LEASING MIT KILOMETERABRECHNUNG (Verbraucher)</p>

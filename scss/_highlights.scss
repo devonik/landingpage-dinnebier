@@ -21,14 +21,6 @@
   }
 }
 
-// General Tab Container Styles
-.highlights__content {
-}
-
-// Active class to show content
-.highlights__content.active {
-}
-
 // Specific Styles for each Tab Container
 .highlights__content--details {
   .highlights__swiper {
@@ -40,6 +32,7 @@
   .column--left {
     .image {
       margin-top: var(--spacing-sm);
+      max-width: 20rem;
     }
   }
 }
@@ -90,4 +83,13 @@
       column-gap: 0;
     }
   }
+}
+
+// JS behaviour
+.highlights .highlights__content {
+  display: none;
+}
+
+.highlights__content.is-active {
+  display: flex;
 }
