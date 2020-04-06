@@ -27,6 +27,7 @@ body {
   padding: 0 var(--spacing-sm);
   display: flex;
   flex-wrap: wrap;
+  overflow-x: hidden;
 
   & > .container {
     padding: 0;
@@ -47,11 +48,11 @@ body {
   width: 100%;
 
   &--large {
-    font-size: var(--headline-large-font-size);
+    font-size: var(--headline-medium-font-size);
   }
 
   &--medium {
-    font-size: var(--headline-medium-font-size);
+    font-size: var(--copy-large-font-size);
   }
 }
 
@@ -81,6 +82,16 @@ body {
       & + .column {
         padding: 0 0 0 var(--spacing-md);
       }
+    }
+  }
+
+  .headline {
+    &--large {
+      font-size: var(--headline-large-font-size);
+    }
+
+    &--medium {
+      font-size: var(--headline-medium-font-size);
     }
   }
 }
