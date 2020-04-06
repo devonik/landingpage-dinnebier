@@ -19,7 +19,6 @@
   textarea {
     border: none;
     padding: var(--spacing-xs);
-    width: 100%;
   }
 
   input[type="number"] {
@@ -69,14 +68,17 @@
 
 .form__group {
   width: 100%;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
 
   &--25 {
     width: 100%;
+    display: inline-flex;
   }
 
   &--75 {
     width: 100%;
+    display: inline-flex;
   }
 }
 
@@ -96,7 +98,7 @@
 
   .form__group {
     width: 100%;
-    display: inline-block;
+    // display: inline-block;
 
     &--25 {
       width: 25%;
@@ -136,7 +138,7 @@
         background-color: var(--red);
 
         &:after {
-          display: block;
+          display: flex;
         }
       }
     }
