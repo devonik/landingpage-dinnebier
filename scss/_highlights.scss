@@ -29,6 +29,10 @@
 }
 
 .highlights__content--emission {
+  .headline {
+    margin: var(--spacing-sm) 0;
+  }
+
   .column--left {
     .image {
       margin-top: var(--spacing-sm);
@@ -39,7 +43,7 @@
 
 .highlights__content--leasing {
   .headline {
-    margin-bottom: var(--spacing-sm);
+    margin: var(--spacing-sm) 0;
   }
 
   .copy {
@@ -83,13 +87,4 @@
       column-gap: 0;
     }
   }
-}
-
-// JS behaviour
-.highlights .highlights__content {
-  display: none;
-}
-
-.highlights__content.is-active {
-  display: flex;
 }

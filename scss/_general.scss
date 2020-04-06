@@ -16,7 +16,6 @@ body {
   max-width: var(--container-outer-width);
   margin: 0 auto;
   line-height: 1.5;
-  // overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -75,6 +74,10 @@ body {
 .image {
   max-width: 100%;
   display: block;
+}
+
+.hidden {
+  display: none;
 }
 
 @media (min-width: $breakpoint-md) {

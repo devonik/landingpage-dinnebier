@@ -5,102 +5,101 @@
 
     <div class="select-wrapper">
       <select class="select">
-        <option value="highlights" class="select__option" data-option="highlights-select-details">Ausstattungshighlights</option>
-        <option value="emission" class="select__option" data-option="highlights-select-emission">Verbrauchsangaben</option>
-        <option value="leasing" class="select__option" data-option="highlights-select-leasing">Unser Leasingangebot</option>
+        <option value="details" class="select__option">Ausstattungshighlights</option>
+        <option value="emission" class="select__option">Verbrauchsangaben</option>
+        <option value="leasing" class="select__option">Unser Leasingangebot</option>
       </select>
     </div>
 
-
-    <div data-option="highlights-select-details" class="container highlights__content highlights__content--details">
-      <div class="swiper-container highlights__swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="/images/gallery_epace-sideview.jpg" alt="Jaguar E-Pace Seitenansicht" class="image">
+    <div class="highlights__wrapper">
+      <div class="container highlights__content highlights__content--details">
+        <div class="swiper-container highlights__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="/images/gallery_epace-sideview.jpg" alt="Jaguar E-Pace Seitenansicht" class="image">
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/gallery_epace-cockpit.jpg" alt="Jaguar E-Pace Cockpit" class="image">
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/gallery_epace-display.jpg" alt="Jaguar E-Pace Display" class="image">
+            </div>
           </div>
-          <div class="swiper-slide">
-            <img src="/images/gallery_epace-cockpit.jpg" alt="Jaguar E-Pace Cockpit" class="image">
-          </div>
-          <div class="swiper-slide">
-            <img src="/images/gallery_epace-display.jpg" alt="Jaguar E-Pace Display" class="image">
-          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <ul class="list">
+          <li class="list__element">Ambiente Beleuchtung</li>
+          <li class="list__element">Lenkradheizung</li>
+          <li class="list__element">Winter-Paket</li>
+          <li class="list__element">elekr. Heckklappe</li>
+          <li class="list__element">Multifunktions Sport-/Lederlenkrad</li>
+          <li class="list__element">Sitzheizung vorn</li>
+          <li class="list__element">Bordcomputer</li>
+          <li class="list__element">Klimaautomatik 2-Zonen</li>
+          <li class="list__element">Parkpilotsystem vorn und hinten</li>
+          <li class="list__element">Müdigkeitswarner</li>
+          <li class="list__element">Einparkhilfe vorn und hinten</li>
+          <li class="list__element">elektr. Parkbremse</li>
+        </ul>
       </div>
-      <ul class="list">
-        <li class="list__element">Ambiente Beleuchtung</li>
-        <li class="list__element">Lenkradheizung</li>
-        <li class="list__element">Winter-Paket</li>
-        <li class="list__element">elekr. Heckklappe</li>
-        <li class="list__element">Multifunktions Sport-/Lederlenkrad</li>
-        <li class="list__element">Sitzheizung vorn</li>
-        <li class="list__element">Bordcomputer</li>
-        <li class="list__element">Klimaautomatik 2-Zonen</li>
-        <li class="list__element">Parkpilotsystem vorn und hinten</li>
-        <li class="list__element">Müdigkeitswarner</li>
-        <li class="list__element">Einparkhilfe vorn und hinten</li>
-        <li class="list__element">elektr. Parkbremse</li>
-      </ul>
-    </div>
 
-
-    <div data-option="highlights-select-emission" class="container highlights__content highlights__content--emission">
-      <h3 class="headline headline--medium">Verbrauchs&shy;angaben und CO<sup>2</sup>-Emissionen</h3>
-      <div class="column column--left">
-        <dl class="definition-list">
-          <dt class="definition-list__term">Kraftstoffverbrauch kombiniert</dt>
-          <dd class="definition-list__description">5,7 l/100km</dd>
-          <div class="definition-list__spacer"></div>
-          <dt class="definition-list__term">Kraftstoffverbrauch innerorts</dt>
-          <dd class="definition-list__description">6,0 l/100km</dd>
-          <div class="definition-list__spacer"></div>
-          <dt class="definition-list__term">Kraftstoffverbrauch außerorts</dt>
-          <dd class="definition-list__description">4,8 l/100km</dd>
-          <div class="definition-list__spacer"></div>
-          <dt class="definition-list__term">CO<sup>2</sup>-Emissionen kombiniert</dt>
-          <dd class="definition-list__description">150-149 g/km</dd>
-          <div class="definition-list__spacer"></div>
-          <dt class="definition-list__term">Schadstoffklasse</dt>
-          <dd class="definition-list__description">Euro 6b (NEFZ)</dd>
-          <div class="definition-list__spacer"></div>
-          <dt class="definition-list__term">Feinstaubplakette</dt>
-          <dd class="definition-list__description">Grün</dd>
-          <div class="definition-list__spacer"></div>
-          <dt class="definition-list__term">CO<sup>2</sup>-Effizienzklasse</dt>
-          <dd class="definition-list__description">B</dd>
-        </dl>
-        <img src="/images/co2_emissionen.jpg" alt="Jaguar E-Page C02-Emissionen" class="image">
+      <div class="container highlights__content highlights__content--emission">
+        <h3 class="headline headline--medium">Verbrauchs&shy;angaben und CO<sup>2</sup>-Emissionen</h3>
+        <div class="column column--left">
+          <dl class="definition-list">
+            <dt class="definition-list__term">Kraftstoffverbrauch kombiniert</dt>
+            <dd class="definition-list__description">5,7 l/100km</dd>
+            <div class="definition-list__spacer"></div>
+            <dt class="definition-list__term">Kraftstoffverbrauch innerorts</dt>
+            <dd class="definition-list__description">6,0 l/100km</dd>
+            <div class="definition-list__spacer"></div>
+            <dt class="definition-list__term">Kraftstoffverbrauch außerorts</dt>
+            <dd class="definition-list__description">4,8 l/100km</dd>
+            <div class="definition-list__spacer"></div>
+            <dt class="definition-list__term">CO<sup>2</sup>-Emissionen kombiniert</dt>
+            <dd class="definition-list__description">150-149 g/km</dd>
+            <div class="definition-list__spacer"></div>
+            <dt class="definition-list__term">Schadstoffklasse</dt>
+            <dd class="definition-list__description">Euro 6b (NEFZ)</dd>
+            <div class="definition-list__spacer"></div>
+            <dt class="definition-list__term">Feinstaubplakette</dt>
+            <dd class="definition-list__description">Grün</dd>
+            <div class="definition-list__spacer"></div>
+            <dt class="definition-list__term">CO<sup>2</sup>-Effizienzklasse</dt>
+            <dd class="definition-list__description">B</dd>
+          </dl>
+          <img src="/images/co2_emissionen.jpg" alt="Jaguar E-Page C02-Emissionen" class="image">
+        </div>
+        <div class="column column--right">
+          <img src="/images/vebrauch_e-pace.jpg" alt="Jaguar E-Pace Seitenansicht" class="image">
+        </div>
       </div>
-      <div class="column column--right">
-        <img src="/images/vebrauch_e-pace.jpg" alt="Jaguar E-Pace Seitenansicht" class="image">
-      </div>
-    </div>
 
-
-    <div data-option="highlights-select-leasing" class="container highlights__content highlights__content--leasing">
-      <h3 class="headline headline--medium">Unser Leasingangebot</h3>
-      <div class="column column--left">
-        <p class="copy copy--bold">für Jaguar E-PACE D180 AWD aut. Chequered Flag Vertragsart: LEASING MIT KILOMETERABRECHNUNG (Verbraucher)</p>
-        <dl class="definition-list">
-          <dt class="definition-list__term">Listenpreis:</dt>
-          <dd class="definition-list__description">60.639 €</dd>
-          <div class="definition-list__spacer"></div>
-          <dt class="definition-list__term">Leasingsonderzahlung:</dt>
-          <dd class="definition-list__description">0,00 €</dd>
-          <div class="definition-list__spacer"></div>
-          <dt class="definition-list__term">Laufzeit:</dt>
-          <dd class="definition-list__description">48 Monate</dd>
-          <div class="definition-list__spacer"></div>
-          <dt class="definition-list__term">Gesamtfahrleistung:</dt>
-          <dd class="definition-list__description">40.000 km</dd>
-          <div class="definition-list__spacer"></div>
-        </dl>
-        <div class="button button--secondary">Leasingrate mtl. inkl. MwSt.: 370,45 €</div>
-        <a href="#contact" class="button button--primary">Angebot anfragen</a>
-      </div>
-      <div class="column column--right">
-        <img src="/images/leasling_e-pace.jpg" alt="Jaguar E-Pace Heckansicht" class="image">
+      <div class="container highlights__content highlights__content--leasing">
+        <h3 class="headline headline--medium">Unser Leasingangebot</h3>
+        <div class="column column--left">
+          <p class="copy copy--bold">für Jaguar E-PACE D180 AWD aut. Chequered Flag Vertragsart: LEASING MIT KILOMETERABRECHNUNG (Verbraucher)</p>
+          <dl class="definition-list">
+            <dt class="definition-list__term">Listenpreis:</dt>
+            <dd class="definition-list__description">60.639 €</dd>
+            <div class="definition-list__spacer"></div>
+            <dt class="definition-list__term">Leasingsonderzahlung:</dt>
+            <dd class="definition-list__description">0,00 €</dd>
+            <div class="definition-list__spacer"></div>
+            <dt class="definition-list__term">Laufzeit:</dt>
+            <dd class="definition-list__description">48 Monate</dd>
+            <div class="definition-list__spacer"></div>
+            <dt class="definition-list__term">Gesamtfahrleistung:</dt>
+            <dd class="definition-list__description">40.000 km</dd>
+            <div class="definition-list__spacer"></div>
+          </dl>
+          <div class="button button--secondary">Leasingrate mtl. inkl. MwSt.: 370,45 €</div>
+          <a href="#contact" class="button button--primary">Angebot anfragen</a>
+        </div>
+        <div class="column column--right">
+          <img src="/images/leasling_e-pace.jpg" alt="Jaguar E-Pace Heckansicht" class="image">
+        </div>
       </div>
     </div>
   </div>
