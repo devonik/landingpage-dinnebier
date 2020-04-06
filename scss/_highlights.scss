@@ -25,6 +25,14 @@
   max-width: 100%;
 }
 
+.highlights__select {
+  width: 100%;
+
+  &--desktop {
+    display: none;
+  }
+}
+
 // Specific Styles for each Tab Container
 .highlights__content--details {
   .highlights__swiper {
@@ -89,6 +97,38 @@
     .list {
       columns: 2;
       column-gap: 0;
+    }
+  }
+
+  .highlights__select {
+
+    &--mobile {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+      margin-bottom: var(--spacing-xs);
+
+      &__button {
+        display: inline-block;
+        cursor: pointer;
+        margin-right: var(--spacing-md);
+        font-family: var(--header-font-family);
+        text-transform: uppercase;
+        border-radius: 50px;
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: 15px;
+
+        &--red {
+          color: var(--red);
+        }
+
+        &.is-active {
+          background-color: var(--mid-gray);
+          font-weight: 600;
+        }
+      }
     }
   }
 }
