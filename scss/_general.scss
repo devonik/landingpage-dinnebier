@@ -74,6 +74,7 @@ body {
 
 .image {
   max-width: 100%;
+  display: block;
 }
 
 @media (min-width: $breakpoint-md) {

@@ -4,6 +4,12 @@
 
   .container {
     align-items: flex-start;
+
+    .column {
+      &--right {
+        max-width: 100%;
+      }
+    }
   }
 
   .copy {
@@ -11,10 +17,10 @@
   }
 
   .image {
-    // max-width: calc(100% + var(--spacing-md) * 2);
-    // margin: var(--spacing-md) calc(var(--spacing-md) * -1) 0;
-
-    // Achieve full bleed layout
+    width: 100vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    max-width: none;
   }
 }
 
@@ -35,6 +41,7 @@
     .image {
       padding-left: var(--spacing-md);
       margin: 0 0 calc(var(--spacing-xl) * 3 / -2);
+      max-width: 100%;
     }
   }
 }
