@@ -5,23 +5,18 @@
 
     .container {
       justify-content: space-between;
+      align-items: center;
     }
 
     .footer__nav {
       width: 100%;
 
-      &--desktop {
-        display: none;
-      }
-
-      &--mobile {
-        margin-bottom: var(--spacing-xs);
-      }
-
       .link {
         text-decoration: none;
+        display: block;
+
         & + .link {
-          margin-left: var(--spacing-md);
+          margin-top: var(--spacing-xs);
         }
 
         &:hover {
@@ -55,12 +50,13 @@
       .footer__nav {
         width: auto;
 
-        &--mobile {
-          display: none;
-        }
+        .link {
+          display: inline-block;
 
-        &--desktop {
-          display: block;
+          & + .link {
+            margin-left: var(--spacing-md);
+            margin-top: 0;
+          }
         }
       }
 
