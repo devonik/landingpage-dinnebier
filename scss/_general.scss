@@ -65,6 +65,11 @@ body {
   &--bold {
     font-weight: 600;
   }
+
+  .link,
+  .link:visited {
+    color: var(--black);
+  }
 }
 
 .link {

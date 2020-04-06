@@ -31,10 +31,6 @@
   z-index: 9;
   background-color: var(--white);
   padding: var(--spacing-xs);
-
-  .button {
-    border-radius: 5px;
-  }
 }
 
 @media (min-width: $breakpoint-md) {
