@@ -4,7 +4,7 @@ var highlightsContentDetails = $('.highlights__content--details');
 
 highlightsContent.hide();
 highlightsContentDetails.show();
-highlightsSelect.change(function(){
+highlightsSelect.change(function() {
     var value = $('.highlights .select option:selected').val();
     var content = $('.highlights__content--' + value);
 
