@@ -1,0 +1,8 @@
+.privacy {
+  padding: var(--spacing-md) 0;
+}
+
+@media (min-width: $breakpoint-md) {
+  .privacy {
+    padding: var(--spacing-lg) 0;
+}
