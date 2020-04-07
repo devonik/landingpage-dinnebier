@@ -1,0 +1,9 @@
+.imprint {
+  padding: var(--spacing-md) 0;
+}
+
+@media (min-width: $breakpoint-md) {
+  .imprint {
+    padding: var(--spacing-lg) 0;
+  }
+}

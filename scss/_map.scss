@@ -1,0 +1,13 @@
+.map {
+  height: 100%;
+  width: 100%;
+  min-height: 30rem;
+  min-width: calc(100vw - var(--spacing-sm) * 2);
+}
+
+@media (min-width: $breakpoint-md) {
+  .map {
+    min-height: unset;
+    min-width: unset;
+  }
+}

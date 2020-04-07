@@ -11,7 +11,9 @@
     {{ content | safe }}
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <script>{% include "js/app.js" %}</script>
+    {# Important: UPDATE API KEY FOR DINNEBIER PROJECT #}
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDR3H0KZmg6hzirEZxN0NHbVSFQsMAiWTU&callback=initMap"></script>
     {% include "pixel.njk" %}
+    <script>{% include "js/app.js" %}</script>
   </body>
 </html>
