@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
     <style>{% include "css/main.css" %}</style>
   </head>
   <body>
@@ -14,6 +15,7 @@
     {# Important: UPDATE API KEY FOR DINNEBIER PROJECT #}
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDR3H0KZmg6hzirEZxN0NHbVSFQsMAiWTU&callback=initMap"></script>
     {% include "pixel.njk" %}
+    {% include "cookieconsent.njk" %}
     <script>{% include "js/app.js" %}</script>
   </body>
 </html>
