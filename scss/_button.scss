@@ -10,6 +10,9 @@
   display: block;
   line-height: 1.3;
   text-align: center;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 5px;
 
   &--primary {
     background-color: var(--red);

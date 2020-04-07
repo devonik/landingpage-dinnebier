@@ -14,5 +14,14 @@
 @media (min-width: $breakpoint-md) {
   .showroom {
     padding: var(--spacing-lg) 0;
+
+    .container {
+      justify-content: space-between;
+
+      .column {
+        flex-basis: 50%;
+        flex-grow: 0;
+      }
+    }
   }
 }

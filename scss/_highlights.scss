@@ -21,12 +21,20 @@
   }
 }
 
-// General Tab Container Styles
-.highlights__content {
+.highlights__wrapper {
+  max-width: 100%;
+
+  .container {
+    padding: 0;
+  }
 }
 
-// Active class to show content
-.highlights__content.active {
+.highlights__select {
+  width: 100%;
+
+  &--desktop {
+    display: none;
+  }
 }
 
 // Specific Styles for each Tab Container
@@ -37,16 +45,21 @@
 }
 
 .highlights__content--emission {
+  .headline {
+    margin: var(--spacing-sm) 0;
+  }
+
   .column--left {
     .image {
       margin-top: var(--spacing-sm);
+      max-width: 20rem;
     }
   }
 }
 
 .highlights__content--leasing {
   .headline {
-    margin-bottom: var(--spacing-sm);
+    margin: var(--spacing-sm) 0;
   }
 
   .copy {
@@ -88,6 +101,38 @@
     .list {
       columns: 2;
       column-gap: 0;
+    }
+  }
+
+  .highlights__select {
+
+    &--mobile {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+      margin-bottom: var(--spacing-xs);
+
+      &__button {
+        display: inline-block;
+        cursor: pointer;
+        margin-right: var(--spacing-md);
+        font-family: var(--header-font-family);
+        text-transform: uppercase;
+        border-radius: 50px;
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: 15px;
+
+        &--red {
+          color: var(--red);
+        }
+
+        &.is-active {
+          background-color: var(--mid-gray);
+          font-weight: 600;
+        }
+      }
     }
   }
 }

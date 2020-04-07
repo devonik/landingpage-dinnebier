@@ -1,4 +1,4 @@
-<section class="contact">
+<section id="contact" class="contact">
   <div class="container">
     <h2 class="headline headline--large">Haben wir Ihr Interesse geweckt?</h2>
     <form action="/.netlify/functions/ses-send-email"  method="POST" class="form">
@@ -7,59 +7,72 @@
       <div class="form__column--left">
         <fieldset>
           <div class="form__group">
-            <label for="firstName">Vorname*</label>
-            <input type="text" id="firstName" name="firstName" placeholder="" required>
+            <label for="form-prename">Vorname*</label>
+            <input type="text" id="form-prename" name="prename" required>
           </div>
           <div class="form__group">
-            <label for="lastName">Nachname*</label>
-            <input type="text" id="lastName" name="lastName" placeholder="" required>
+            <label for="form-name">Nachname*</label>
+            <input type="text" id="form-name" name="name" required>
           </div>
         </fieldset>
         <fieldset>
-          <label for="email">E-Mail*</label>
-          <input type="email" id="email" name="email" placeholder="" required>
-          <label for="tel">Telefon</label>
-          <input type="tel" id="tel" name="tel" placeholder="">
+          <div class="form__group">
+            <label for="form-mail">E-Mail*</label>
+            <input type="email" id="form-mail" name="mail" required>
+          </div>
+          <div class="form__group">
+            <label for="form-phone">Telefon</label>
+            <input type="tel" id="form-phone" name="phone">
+          </div>
         </fieldset>
       </div>
 
       <div class="form__column--right">
         <fieldset>
           <div class="form__group form__group--25">
-            <label for="plz">PLZ*</label>
-            <input type="number" id="plz" name="plz" placeholder="" required>
+            <label for="form-zip">PLZ*</label>
+            <input type="number" id="form-zip" name="zip" required>
           </div>
           <div class="form__group form__group--75">
-            <label for="place">Ort*</label>
-            <input type="text" id="place" name="place" placeholder="" required>
-          </div>
-          <label for="">Sitz</label>
-          <div class="select-wrapper">
-            <select id="" name="" class="select">
-              <option value="foo">Foo</option>
-              <option value="bar">Bar</option>
-            </select>
+            <label for="form-place">Ort*</label>
+            <input type="text" id="form-place" name="place" required>
           </div>
         </fieldset>
         <fieldset>
-          <input type="checkbox" id="" name="" value="">
-          <label for="">Sie sind ein Unternehmen?</label><br>
-          <label for="">Firmenname</label>
-          <input type="text" id="" name="" placeholder="">
+          <div class="form__group">
+            <label class="form__checkbox" for="form-company">Sie sind ein Unternehmen?
+              <input type="checkbox" id="form-company" name="company" value="">
+              <span class="form__checkmark"></span>
+            </label>
+          </div>
+          <div class="form__group">
+            <label for="form-company-name">Firmenname</label>
+            <input type="text" id="form-company-name" name="company-name">
+          </div>
         </fieldset>
       </div>
     </div>
 
     <div class="form__column--bottom">
       <fieldset>
-        <label for="">Nachricht</label>
-        <textarea id="" name="" rows="4" cols="50" maxlength="1000"></textarea>
+        <div class="form__group">
+          <label for="form-message">Nachricht</label>
+          <textarea id="form-message" name="message" rows="4" cols="50" maxlength="1000"></textarea>
+        </div>
       </fieldset>
       <fieldset>
-        <input type="checkbox" id="" name="" value="" required>
-        <label for="">Ich habe die <a href="/" class="link" target="_blank">Informationen zur Privatsphäre</a> gelesen.*</label><br>
-        <input type="checkbox" id="" name="" value="" required>
-        <label for="">Ich stimme der Nutzung meiner persönlichen Daten zu Marketingzwecken zu.</label>
+        <div class="form__group">
+          <label class="form__checkbox" for="form-privacy">Ich habe die <a href="/privacy" class="link" target="_blank">Informationen zur Privatsphäre</a> gelesen.*
+            <input type="checkbox" id="form-privacy" name="privacy" required>
+            <span class="form__checkmark"></span>
+          </label>
+        </div>
+        <div class="form__group">
+          <label class="form__checkbox" for="form-marketing">Ich stimme der Nutzung meiner persönlichen Daten zu Marketingzwecken zu.
+            <input type="checkbox" id="form-marketing" name="marketing" required>
+            <span class="form__checkmark"></span>
+          </label>
+        </div>
       </fieldset>
       <input type="submit" value="Anfrage senden" class="button button--primary">
     </div>

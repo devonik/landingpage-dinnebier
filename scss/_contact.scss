@@ -1,20 +1,29 @@
 .contact {
   padding: var(--spacing-md) 0;
-}
 
-.form {
+  .form {
+    margin-top: var(--spacing-md);
+  }
+
   .form__column--right {
-    input[type="checkbox"] {
-
-      & + label {
-        padding: 42px 0 29px;
-      }
+    .form__checkbox {
+      margin-top: var(--spacing-xs);
     }
+  }
+
+  .select {
+    background: var(--white);
   }
 }
 
 @media (min-width: $breakpoint-md) {
   .contact {
     padding: var(--spacing-lg) 0;
+
+    .form__column--right {
+      .form__checkbox {
+        margin-top: 42px;
+      }
+    }
   }
 }
