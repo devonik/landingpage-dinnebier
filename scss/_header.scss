@@ -1,10 +1,9 @@
 .header {
-  padding: var(--spacing-lg) 0;
+  padding: 15rem 0 var(--spacing-md);
   background-image: url(/images/header-mobil.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
-  padding-top: 15rem;
+  background-position: center;
 
   .container {
     justify-content: flex-end;
