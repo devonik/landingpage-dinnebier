@@ -18,4 +18,7 @@
             console.log("error response: ",error)
         }
     });
+
+    //Facebook Pixel
+    fbq('track', 'CompleteRegistration');
 })
