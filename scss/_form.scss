@@ -9,6 +9,10 @@
     font-size: var(--copy-font-size);
   }
 
+  fieldset {
+    width: 100%;
+  }
+
   label {
     letter-spacing: .02rem;
     display: block;
@@ -107,8 +111,6 @@
   }
 
   .form__group {
-    width: 100%;
-    // display: inline-block;
 
     &--25 {
       width: 25%;
