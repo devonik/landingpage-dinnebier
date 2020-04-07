@@ -1,7 +1,7 @@
 .form {
   background-color: var(--mid-gray);
   width: 100%;
-  padding: calc(var(--spacing-sm) * 1.75) calc(var(--spacing-sm) * 1.5);
+  padding: calc(var(--spacing-sm)) calc(var(--spacing-sm));
   display: flex;
   flex-wrap: wrap;
 
@@ -41,6 +41,10 @@
     border: none;
   }
 
+  textarea {
+    width: 100%;
+  }
+
   .select {
     font-family: var(--copy-font-family);
     text-transform: capitalize;
@@ -64,6 +68,9 @@
 
 .form__column--bottom {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .form__group {
@@ -83,6 +90,9 @@
 }
 
 @media (min-width: $breakpoint-md) {
+  .form {
+    padding: calc(var(--spacing-sm) * 1.75) calc(var(--spacing-sm) * 1.5);
+  }
 
   .form__column--top {
     flex-wrap: nowrap;
