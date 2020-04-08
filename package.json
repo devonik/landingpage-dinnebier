@@ -30,7 +30,8 @@
     "aws-sdk": "^2.655.0",
     "axios": "^0.19.2",
     "dotenv": "^8.2.0",
-    "sparkpost": "^2.1.4",
-    "querystring": "^0.2.0"
+    "fast-xml-parser": "^3.16.0",
+    "querystring": "^0.2.0",
+    "sparkpost": "^2.1.4"
   }
 }

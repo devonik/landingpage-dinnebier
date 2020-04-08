@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <lead>
+        <vehicle>
+            <internalId>2G1F91EXXXXX1600</internalId>
+            <make>Marke</make>
+            <model>Typ Modell</model>
+            <firstRegistration>mm/YYYY</firstRegistration>
+            <mileage>1000</mileage>
+            <price>35490</price>
+            <conditionType>new</conditionType>
+            <type>PKW</type>
+            <vin>XYZABCDEFGHIJKL</vin>
+        </vehicle>
+        <potentialBuyer>
+            <company/>
+            <salutation>Herr</salutation>
+            <title/>
+            <firstname>Thomas</firstname>
+            <lastname>Theel</lastname>
+            <street>Gerlachstr. 47-49</street>
+            <zip>14480</zip><city>Potsdam</city>
+            <email>info@prof4.net</email>
+            <additionalData>Zusatzinformation1: Text1&#13; Zusatzinformation2: Text2&#xD;</additionalData>
+            <phone>
+            <internationalPrefix>49</internationalPrefix>
+            <prefix>0331</prefix>
+            <number>8700421</number>
+            </phone>
+            <message>Sehr geehrte Damen und Herren,&#13; &#13; können Sie mir bei dem Fahrzeug einen Händlerpreis machen?&#xD; &#xD; Hat der Wagen Werksgarantie in Deutschland?&#xD; &#xD; Mit freundlichen Grüßen&#xD; &#xD; Prof4Net&#xD;</message>
+            <add_fields>
+                <field>
+                    <key>Zusatzfeld 1</key>
+                    <value>Text1</value>
+                </field>
+                <field>
+                    <key>Zusatzfeld 2</key>
+                    <value>Text2</value>
+                </field>
+                <field>
+                    <key>Zusatzfeld 3</key>
+                    <value>Text3</value>
+                </field>
+            </add_fields>
+        </potentialBuyer>
+        <subject>Probefahrtanfrage</subject>
+        <campaign_name/>
+        <files>
+            <filename>name_of_file_in_utf8_1.pdf</filename>
+            <filename>name_of_file_in_utf8_2.pdf</filename>
+        </files>
+    </lead>
