@@ -23,7 +23,7 @@ exports.handler = function(event, context, callback) {
   client.transmissions
     .send({
       content: {
-        from: 'dinnebier@mail.ljft.de',
+        from: 'aktion.dinnebiergruppe@mail.ljft.de',
         subject: 'Formular',
         html:
           "<html><body>"+header+body+"</body></html>"
