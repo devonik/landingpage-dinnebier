@@ -11,6 +11,7 @@ const options = {
 
 const client = new SparkPost(process.env.SPARKPOST_API_KEY,options);
 const xmlParser = new FastXmlParser();
+
 exports.handler = function(event, context, callback) {
   console.log("event.body", event.body);
     let parsedJson = parse(event.body);
@@ -22,15 +23,6 @@ exports.handler = function(event, context, callback) {
     var parsedXml = xmlParser.parse(parsedJson);
     console.log('parsedXml', parsedXml)
     
-    //This beatiful text is replaced by horrible xml ...
-    /*let header = "<p><b>Es sind folgende Formulardaten von der Seite https://aktion.dinnebiergruppe.de/ eingegangen:</b></p><hr>"
-
-    let body = "";
-    for(var key in parsedJson){
-      var value = parsedJson[key];
-      body += "<p><b>"+key+": </b> <span>"+value+"</span></p>";
-    }*/
-
     let xml = '<?xml version="1.0" encoding="UTF-8"?>'+
                 '<lead>'+
                   '<vehicle>'+
@@ -58,7 +50,7 @@ exports.handler = function(event, context, callback) {
                   '<subject>Angebotsanfrage</subject>'+
                   '<campaign_name/>'+
                 '</lead>';
-                //old html: "<html><body>"+header+body+"</body></html>"
+                
   client.transmissions
     .send({
       content: {
@@ -67,7 +59,7 @@ exports.handler = function(event, context, callback) {
         text: xml
       },
       //TODO change receipent to real - { address: 'lead.krefeld@dinnebier-gruppe.de' }
-    recipients: [{ address: 'niklas.grieger@upljft.com' }]
+    recipients: [{ address: 'developer@upljft.com' }, { address: 'lead.krefeld@dinnebier-gruppe.de' }]
   }).then(result => {
     callback(null, {
       statusCode: 200,
