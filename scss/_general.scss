@@ -57,23 +57,33 @@ body {
 
 .copy {
   font-size: var(--copy-font-size);
+  width: 100%;
 
   &--small {
     font-size: var(--copy-small-font-size);
+  }
+
+  &--large {
+    font-size: var(--copy-large-font-size);
   }
 
   &--bold {
     font-weight: 600;
   }
 
-  .link,
   .link:visited {
-    color: var(--black);
+    color: inherit;
   }
 }
 
 .link {
   color: inherit;
+
+  &--emphasize {
+    font-size: var(--copy-large-font-size);
+    color: var(--red);
+    font-weight: 600;
+  }
 }
 
 .image {
