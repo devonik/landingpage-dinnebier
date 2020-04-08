@@ -1,6 +1,6 @@
 
 
-    $("#contact-form").submit(function(evt){
+$("#contact-form").submit(function(evt){
     evt.preventDefault();
     $.ajax({
         url: "/.netlify/functions/sparkpost-send-email",
