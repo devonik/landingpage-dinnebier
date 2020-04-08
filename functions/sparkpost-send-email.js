@@ -12,10 +12,16 @@ const options = {
 const client = new SparkPost(process.env.SPARKPOST_API_KEY,options);
 const xmlParser = new FastXmlParser();
 exports.handler = function(event, context, callback) {
+  console.log("event.body", event.body);
     let parsedJson = parse(event.body);
-
+    console.log('parsedJson', parsedJson);
+    if(parsedJson.message){
+      //If message its set lets change linebreak
+      parsedJson.message = parsedJson.message.split('\r\n').join('&#xD;')
+    }
     var parsedXml = xmlParser.parse(parsedJson);
-
+    console.log('parsedXml', parsedXml)
+    
     //This beatiful text is replaced by horrible xml ...
     /*let header = "<p><b>Es sind folgende Formulardaten von der Seite https://aktion.dinnebiergruppe.de/ eingegangen:</b></p><hr>"
 
@@ -61,7 +67,7 @@ exports.handler = function(event, context, callback) {
         text: xml
       },
       //TODO change receipent to real - { address: 'lead.krefeld@dinnebier-gruppe.de' }
-    recipients: [{ address: 'developer@upljft.com' }]
+    recipients: [{ address: 'niklas.grieger@upljft.com' }]
   }).then(result => {
     callback(null, {
       statusCode: 200,
