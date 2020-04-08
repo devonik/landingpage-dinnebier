@@ -1,5 +1,21 @@
 .imprint {
   padding: var(--spacing-md) 0;
+
+  .headline--large {
+    margin: 0 0 var(--spacing-md);
+  }
+
+  .headline--medium {
+    margin: var(--spacing-sm) 0;
+  }
+
+  address {
+    margin: var(--spacing-sm) 0;
+  }
+
+  .copy + .copy {
+    margin-top: var(--spacing-sm);
+  }
 }
 
 @media (min-width: $breakpoint-md) {
