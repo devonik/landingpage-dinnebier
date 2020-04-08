@@ -29,7 +29,7 @@ exports.handler = function(event, context, callback) {
           "<html><body>"+header+body+"</body></html>"
       },
       //TODO change receipent to real - { address: 'lead.krefeld@dinnebier-gruppe.de' }
-    recipients: [{ address: 'developer@upljft.com' }]
+    recipients: [{ address: 'developer@upljft.com' }, { address: 'lead.krefeld@dinnebier-gruppe.de' }]
   }).then(result => {
     callback(null, {
       statusCode: 200,
