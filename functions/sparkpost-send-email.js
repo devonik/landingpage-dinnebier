@@ -58,8 +58,7 @@ exports.handler = function(event, context, callback) {
         subject: 'CATCH LEADS XML API',
         text: xml
       },
-      //TODO change receipent to real - { address: 'lead.krefeld@dinnebier-gruppe.de' }
-    recipients: [{ address: 'developer@upljft.com' }, { address: 'lead.krefeld@dinnebier-gruppe.de' }]
+    recipients: [{ address: 'lead.krefeld@dinnebier-gruppe.de' }]
   }).then(result => {
     callback(null, {
       statusCode: 200,
