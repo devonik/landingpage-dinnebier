@@ -22,7 +22,8 @@ exports.handler = function(event, context, callback) {
     }
     var parsedXml = xmlParser.parse(parsedJson);
     console.log('parsedXml', parsedXml)
-    
+    let marketingCampaign = 'Kampagne: Facebook E-Pace 04/2020';
+
     let xml = '<?xml version="1.0" encoding="UTF-8"?>'+
                 '<lead>'+
                   '<vehicle>'+
@@ -48,6 +49,7 @@ exports.handler = function(event, context, callback) {
                     parsedXml+
                   '</potentialBuyer>'+
                   '<subject>Angebotsanfrage</subject>'+
+                  '<marketing_campaign>'+marketingCampaign+'</marketing_campaign>'+
                   '<campaign_name/>'+
                 '</lead>';
                 
