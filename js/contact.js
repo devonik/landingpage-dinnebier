@@ -1,6 +1,8 @@
 
 
 $("#contact-form").submit(function(evt){
+    // preventing ajax call cause old
+    return
     evt.preventDefault();
     $.ajax({
         url: "/.netlify/functions/sparkpost-send-email",
